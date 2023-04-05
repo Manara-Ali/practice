@@ -6,7 +6,9 @@ const LearnersList = () => {
 
   useEffect(() => {
     const fetchLearners = async () => {
-      const response = await axios.get("/learners");
+      const response = await axios.get(
+        "https://learners-crud.onrender.com/learners"
+      );
 
       const { data } = response.data;
 
