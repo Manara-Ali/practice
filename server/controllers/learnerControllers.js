@@ -27,7 +27,7 @@ exports.createLearner = async (req, res) => {
     res.status(201).json({
       status: "success",
       data: {
-        newLearner,
+        newLearner: newLearner,
       },
     });
   } catch (error) {
